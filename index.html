@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            tex{
+            font-weight: 100;
+            }
+        </style>
+    </head>
+    <body id="abhi_body">
+        <script>
+            var h= document.createElement("header")
+            console.log(h);
+            h.innerHTML="HEADER"
+            document.getElementById("abhi_body").appendChild(h)
+            document.querySelector("header").setAttribute("class","abhi_header");
+            var c = document.getElementsByClassName("abhi_header")
+            console.log(c)
+            c[0].style.width = "100%"
+            c[0].style.height = "120px"
+            c[0].style.border = "4px solid black"
+            c[0].style.textAlign ="center"
+            c[0].style.lineHeight ="120px"
+            c[0].style.fontWeight ="bold"
+            c[0].style.fontStyle ="italic"
+            c[0].style.fontSize ="4em"
+            c[0].style.color="green"
+
+            var n = document.createElement("nav")
+            n.innerHTML="Navigation Menu"
+            
+            document.getElementById("abhi_body").appendChild(n)
+          
+            document.querySelector("nav").setAttribute("class","abhi_nav");
+            var navclass = document.getElementsByClassName("abhi_nav")
+       
+            navclass[0].style.width = "100%"
+            navclass[0].style.height = "60px"
+            navclass[0].style.border = "4px solid black"
+            navclass[0].style.textAlign ="center"
+            navclass[0].style.lineHeight ="60px"
+            navclass[0].style.fontWeight ="bold"
+            navclass[0].style.fontStyle ="italic"
+            navclass[0].style.fontSize ="3em"
+            navclass[0].style.color="green" 
+
+           
+            let aside1 = document.createElement("aside")
+            aside1.innerHTML="ASIDE1"
+            let section = document.createElement("section")
+            section.innerHTML="SECTION"
+            let aside2 = document.createElement("aside")
+            aside2.innerHTML="ASIDE2"
+            console.log(aside1)
+           
+            document.getElementById("abhi_body").appendChild(aside1)
+            document.getElementById("abhi_body").appendChild(section)
+            document.getElementById("abhi_body").appendChild(aside2)
+
+            
+            var asides = document.querySelectorAll('aside')
+            
+            asides.forEach(function(currentValue,index,asides){
+                asides[index].style.display = 'inline-block';
+            });
+            document.querySelector('section').style.display = 'inline-block';
+            document.querySelector("aside").setAttribute("class","as1");
+            let as1 = document.getElementsByClassName('as1');
+            as1[0].style.width = "160px"
+            as1[0].style.height = "500px"
+            as1[0].style.border = "4px solid black"
+            as1[0].style.textAlign ="center"
+            as1[0].style.lineHeight ="60px"
+            as1[0].style.fontWeight ="bold"
+            as1[0].style.fontStyle ="italic"
+            as1[0].style.color="green"
+            
+           
+            document.querySelector('section').setAttribute("class","av_section")
+            let sect = document.getElementsByClassName('av_section');
+          
+            sect[0].style.width = "1157px"
+            sect[0].style.height = "500px"
+            sect[0].style.border = "4px solid black"
+            sect[0].style.textAlign ="center"
+            sect[0].style.lineHeight ="60px"
+            sect[0].style.fontWeight ="bold"
+            sect[0].style.fontStyle ="italic"
+            sect[0].style.color="green"
+
+           
+            var f = document.createElement("footer")
+            
+            document.getElementById("abhi_body").appendChild(f)
+            f.innerHTML= "FOOTER"
+           
+            document.querySelector("footer").setAttribute("class","abhi_footer")
+            let ftr = document.getElementsByClassName("abhi_footer")
+        
+            ftr[0].style.border = "4px solid black"
+            ftr[0].style.width = "100%"
+            ftr[0].style.height = "100px"
+            ftr[0].style.border = "4px solid black"
+            ftr[0].style.textAlign ="center"
+            ftr[0].style.lineHeight ="100px"
+            ftr[0].style.fontWeight ="bold"
+            ftr[0].style.fontStyle ="italic"
+            ftr[0].style.fontSize ="4em"
+            ftr[0].style.color="green"
+    
+
+       
+            document.querySelectorAll('aside')[1].setAttribute('class',"a_aside2");
+            var x = document.getElementsByClassName('a_aside2');
+            x[0].style.width = "162px"
+            x[0].style.height = "500px"
+            x[0].style.border = "4px solid black"
+            x[0].style.textAlign ="center"
+            x[0].style.lineHeight ="60px"
+            x[0].style.fontWeight ="bold"
+            x[0].style.fontStyle ="italic"
+            x[0].style.color="green"
+            </script>
+    </body>
+</html>
